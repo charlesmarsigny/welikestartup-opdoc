@@ -108,4 +108,9 @@
 * [Workflow](workflow/README.md)
   * [Travailler avec git](workflow/travailler-avec-git.md)
 * [Ops](ops.md)
+* [AWS](aws/README.md)
+  * [EC2 - Connexions SSH](aws/ec2-connexions-ssh/README.md)
+    * [Compte utilisateur SSH](aws/ec2-connexions-ssh/compte-utilisateur-ssh.md)
+    * [Sécurité : Paire de clés](aws/ec2-connexions-ssh/securite-paire-de-cles.md)
+    * [Connexion à une instance publique](aws/ec2-connexions-ssh/connexion-a-une-instance-publique.md)
 
