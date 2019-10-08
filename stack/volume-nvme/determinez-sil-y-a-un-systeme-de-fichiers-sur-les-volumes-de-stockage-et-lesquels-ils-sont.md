@@ -1,4 +1,6 @@
-# Déterminez s'il y a un système de fichiers sur les volumes de stockage et lesquels ils sont
+# Système de fichiers du bon volume
+
+Déterminez s'il y a un système de fichiers sur les volumes de stockage et lesquels ils sont :
 
 ```bash
 sudo file -s /dev/nvme?n*
@@ -17,6 +19,12 @@ sudo file -s /dev/nvme?n*
 * `data` : Pas de système de fichiers.
 * `DOS/MBR boot sector` : Secteur de démarrage DOS/MBR \(peut-être utilisé pour faire des partitions\).
 * `Linux rev 1.0 ext4 filesystem data` : doté d'un système de fichiers ext4.
+
+{% hint style="danger" %}
+Il n'y a pas de système de fichiers sur le volume qui nous intéresse. 
+{% endhint %}
+
+
 
 #### Source :
 

@@ -1,4 +1,4 @@
-# Pour apache2
+# Donner accès à apache2 au volume de stockage NVMe de l'application
 
 * `sudo nano /etc/apache2/apache2.conf`
 

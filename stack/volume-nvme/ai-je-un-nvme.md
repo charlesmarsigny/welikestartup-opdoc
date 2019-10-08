@@ -1,7 +1,4 @@
-# Ai-je un NVMe ?
-
-_Source :_  
-[_https://docs.aws.amazon.com/fr\_fr/AWSEC2/latest/UserGuide/ssd-instance-store.html_](https://docs.aws.amazon.com/fr_fr/AWSEC2/latest/UserGuide/ssd-instance-store.html)
+# Ai-je bien un NVMe ?
 
 * Répertorier les périphériques NVMe à l'aide de la commande lspci : `lspci`
 
@@ -26,4 +23,14 @@ s/nvme/host/nvme-core.ko
 kernel/drivers/nvme/host/nvme.ko
 kernel/drivers/nvmem/nvmem_core.ko
 ```
+
+
+
+#### Source :
+
+{% embed url="https://docs.aws.amazon.com/fr\_fr/AWSEC2/latest/UserGuide/ssd-instance-store.html" %}
+
+\_\_
+
+
 

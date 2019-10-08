@@ -1,8 +1,6 @@
-# Installer le pilote
+# Installer le pilote et trouver le bon volume
 
-_Source :_ [https://docs.aws.amazon.com/fr\_fr/AWSEC2/latest/UserGuide/nvme-ebs-volumes.html](https://docs.aws.amazon.com/fr_fr/AWSEC2/latest/UserGuide/nvme-ebs-volumes.html) \_\_
-
-* Mettez à jour le cache de votre package :
+Mettez à jour le cache de votre package :
 
 ```bash
 sudo apt-get update -y
@@ -37,6 +35,10 @@ nvme1n1     259:1    0     8G  0 disk
 └─nvme1n1p1 259:2    0     8G  0 part /
 ```
 
+{% hint style="success" %}
+Le volume qui nous intéresse est le **nvme0n1** qui a 140 Go.
+{% endhint %}
+
 * Installation de l'interface de commandes `nvme-cli` \(pour pouvoir utiliser les commandes `nvme` : 
 
 ```bash
@@ -62,7 +64,15 @@ mn      : Amazon Elastic Block Store
 ...
 ```
 
-_Source :_ [https://docs.aws.amazon.com/fr\_fr/AWSEC2/latest/UserGuide/ebs-using-volumes.html](https://docs.aws.amazon.com/fr_fr/AWSEC2/latest/UserGuide/ebs-using-volumes.html) \_\_
+\*\*\*\*
 
-\_\_
+**Source :**
+
+{% embed url="https://docs.aws.amazon.com/fr\_fr/AWSEC2/latest/UserGuide/nvme-ebs-volumes.html" %}
+
+{% embed url="https://docs.aws.amazon.com/fr\_fr/AWSEC2/latest/UserGuide/ebs-using-volumes.html" %}
+
+
+
+
 
