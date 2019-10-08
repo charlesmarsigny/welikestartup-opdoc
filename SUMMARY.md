@@ -1,6 +1,10 @@
 # Table of contents
 
 * [AWS](README.md)
+* [EC2 - Connexions SSH](ec2-connexions-ssh/README.md)
+  * [Compte utilisateur SSH](ec2-connexions-ssh/compte-utilisateur-ssh.md)
+  * [Sécurité : Paire de clés](ec2-connexions-ssh/securite-paire-de-cles.md)
+  * [Connexion à une instance publique](ec2-connexions-ssh/connexion-a-une-instance-publique.md)
 * [Volume NVMe](volume-nvme/README.md)
   * [Ai-je un NVMe ?](volume-nvme/ai-je-un-nvme.md)
   * [Installer le pilote](volume-nvme/installer-le-pilote.md)
@@ -10,10 +14,8 @@
   * [Donner accès au serveur web au volume de stockage de 150 Go \(/data/wordpress\) :](volume-nvme/donner-acces-au-serveur-web-au-volume-de-stockage-de-150-go-data-wordpress/README.md)
     * [Pour apache2](volume-nvme/donner-acces-au-serveur-web-au-volume-de-stockage-de-150-go-data-wordpress/pour-apache2.md)
     * [Nginx](volume-nvme/donner-acces-au-serveur-web-au-volume-de-stockage-de-150-go-data-wordpress/nginx.md)
-* [EC2 - Connexions SSH](ec2-connexions-ssh/README.md)
-  * [Compte utilisateur SSH](ec2-connexions-ssh/compte-utilisateur-ssh.md)
-  * [Sécurité : Paire de clés](ec2-connexions-ssh/securite-paire-de-cles.md)
-  * [Connexion à une instance publique](ec2-connexions-ssh/connexion-a-une-instance-publique.md)
 * [Stack](stack/README.md)
   * [Installer Nginx](stack/installer-nginx.md)
+  * [Gérer les utilisateurs et les groupes](stack/gerer-les-utilisateurs-et-les-groupes.md)
+* [Pour approfondir](pour-approfondir.md)
 
