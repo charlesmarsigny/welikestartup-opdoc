@@ -5,6 +5,7 @@
   * [Compte utilisateur SSH](ec2-connexions-ssh/compte-utilisateur-ssh.md)
   * [Sécurité : Paire de clés](ec2-connexions-ssh/securite-paire-de-cles.md)
   * [Connexion à une instance publique](ec2-connexions-ssh/connexion-a-une-instance-publique.md)
+  * [Connexion au travers d’un bastion](ec2-connexions-ssh/connexion-au-travers-dun-bastion.md)
 * [Volume NVMe](volume-nvme/README.md)
   * [Ai-je un NVMe ?](volume-nvme/ai-je-un-nvme.md)
   * [Installer le pilote](volume-nvme/installer-le-pilote.md)
