@@ -1,2 +1,0 @@
-# Les filtres \(hooks\)
-
