@@ -12,5 +12,5 @@
 * `DOS/MBR boot sector` : Secteur de démarrage DOS/MBR \(peut-être utilisé pour faire des partitions\).
 * `Linux rev 1.0 ext4 filesystem data` : doté d'un système de fichiers ext4.
 
-_Source :_ [https://docs.aws.amazon.com/fr\_fr/AWSEC2/latest/UserGuide/recognize-expanded-volume-linux.html](https://docs.aws.amazon.com/fr_fr/AWSEC2/latest/UserGuide/recognize-expanded-volume-linux.html) __
+_Source :_ [https://docs.aws.amazon.com/fr\_fr/AWSEC2/latest/UserGuide/recognize-expanded-volume-linux.html](https://docs.aws.amazon.com/fr_fr/AWSEC2/latest/UserGuide/recognize-expanded-volume-linux.html) \_\_
 

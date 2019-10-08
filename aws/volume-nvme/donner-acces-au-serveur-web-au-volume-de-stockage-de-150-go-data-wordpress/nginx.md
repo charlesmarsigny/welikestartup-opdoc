@@ -6,7 +6,7 @@ Il faut changer juste changer la cible de l'emplacement de l'application dans le
 
 `sudo nano /etc/nginx/sites-available/default`
 
-Par exemple : 
+Par exemple :
 
 ```text
 root    /data/wordpress

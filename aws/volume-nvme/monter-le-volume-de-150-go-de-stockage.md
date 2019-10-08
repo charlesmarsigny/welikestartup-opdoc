@@ -1,8 +1,6 @@
 # Monter le volume de 150 Go de stockage
 
-
-
-_Source :_ [https://docs.aws.amazon.com/fr\_fr/AWSEC2/latest/UserGuide/ebs-using-volumes.html](https://docs.aws.amazon.com/fr_fr/AWSEC2/latest/UserGuide/ebs-using-volumes.html) __
+_Source :_ [https://docs.aws.amazon.com/fr\_fr/AWSEC2/latest/UserGuide/ebs-using-volumes.html](https://docs.aws.amazon.com/fr_fr/AWSEC2/latest/UserGuide/ebs-using-volumes.html) \_\_
 
 On a 2 périphériques de stockage : **nvme0n1** et **nvme1n1**.
 

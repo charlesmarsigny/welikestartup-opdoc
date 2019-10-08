@@ -1,7 +1,5 @@
 # Pour apache2
 
-
-
 * `sudo nano /etc/apache2/apache2.conf`
 
   Ajouter l'accès à **wordpress** dans **/data** mais pas à **/data** lui même :

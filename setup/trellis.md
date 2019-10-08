@@ -33,7 +33,7 @@ echo "lemotdepasse" > .vault_pass
 On ajoute une sauvegarde de la base de données à `../site/wls_dev.sql`
 
 ```bash
-??? 
+???
 ```
 
 On ajoute les uploads
@@ -48,7 +48,7 @@ vagrant up
 ```
 
 {% hint style="info" %}
-Soyez patient, cela prend du temps. Mais soyez attentif,  vous allez devoir mettre le mot de passe système pendant le processus.
+Soyez patient, cela prend du temps. Mais soyez attentif, vous allez devoir mettre le mot de passe système pendant le processus.
 {% endhint %}
 
 ### Configuration de la machine virtuelle
@@ -92,7 +92,7 @@ Installer le plugin Vagrant pour Sequel Pro
 vagrant plugin install vagrant-trellis-sequel
 ```
 
-Il suffit de lancer la commande suivante dans le répertoire de Trellis : 
+Il suffit de lancer la commande suivante dans le répertoire de Trellis :
 
 ```bash
 vagrant trellis-sequel open
@@ -108,19 +108,17 @@ Installer le plugin Vagrant
 vagrant plugin install vagrant-trellis-cert
 ```
 
-Il suffit de lancer la commande suivante dans le répertoire de Trellis : 
+Il suffit de lancer la commande suivante dans le répertoire de Trellis :
 
 ```bash
 vagrant trellis-cert trust
 ```
 
- Mettez votre mot de passe système quand il vous est demandé.
+Mettez votre mot de passe système quand il vous est demandé.
 
 {% hint style="info" %}
 Pour être pris en compte, redémarrer votre ordinateur.
 {% endhint %}
 
 ## Déploiement en production
-
-
 

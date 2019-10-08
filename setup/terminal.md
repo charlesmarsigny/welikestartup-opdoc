@@ -16,7 +16,7 @@ description: >-
 
 ### Installation de Homebrew
 
-Homebrew est un gestionnaire de paquet pour macOS,  c'est l'équivalent de apt sous Debian.
+Homebrew est un gestionnaire de paquet pour macOS, c'est l'équivalent de apt sous Debian.
 
 Dans le terminal \(iTerm\) :
 

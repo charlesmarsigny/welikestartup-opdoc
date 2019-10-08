@@ -6,7 +6,7 @@ description: >-
 
 # Textarea
 
-### Creating a textarea <a id="creating-a textarea"></a>
+## Creating a textarea <a id="creating-a textarea"></a>
 
 The Textarea field contains options to customize your field:
 
@@ -15,19 +15,17 @@ The Textarea field contains options to customize your field:
 
 ![](../../.gitbook/assets/textarea-options.png)
 
-### Edit Screen <a id="edit-screen"></a>
+## Edit Screen <a id="edit-screen"></a>
 
 ![](../../.gitbook/assets/textarea-input.png)
 
-### Template usage <a id="template-usage"></a>
+## Template usage <a id="template-usage"></a>
 
 The API will return a string.
 
 ```php
 <p><?php the_field('textarea'); ?></p>
 ```
-
-
 
 {% hint style="info" %}
 [Lien vers la documentation ACF &gt; Field Types &gt; Textarea](https://www.advancedcustomfields.com/resources/textarea/)

@@ -13,5 +13,5 @@ Pour tous les volumes : `df -hT`
 
 =&gt; On est sur la partition **/dev/nvme1n1p1** dont la racine est `/` \(Mounted on\)
 
-_Source :_ [https://docs.aws.amazon.com/fr\_fr/AWSEC2/latest/UserGuide/ebs-describing-volumes.html](https://docs.aws.amazon.com/fr_fr/AWSEC2/latest/UserGuide/ebs-describing-volumes.html) __
+_Source :_ [https://docs.aws.amazon.com/fr\_fr/AWSEC2/latest/UserGuide/ebs-describing-volumes.html](https://docs.aws.amazon.com/fr_fr/AWSEC2/latest/UserGuide/ebs-describing-volumes.html) \_\_
 

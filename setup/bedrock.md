@@ -15,22 +15,24 @@ Nous utilisons un package appelé [Bedrock](https://github.com/roots/bedrock) po
 composer create-project roots/bedrock
 ```
 
-    ou 
+```text
+ou 
+```
 
 ```bash
 php composer.phar create-project roots/bedrock
 ```
 
-    puis
+```text
+puis
+```
 
 ```text
 mv bedrock/.* ./
 rmdir bedrock
 ```
 
-
-
-    2. Copier `.env.example` en `.env` et mettre à jour les variables d'environnement :
+1. Copier `.env.example` en `.env` et mettre à jour les variables d'environnement :
 
 ```php
 DB_NAME       # → Nom de la base de données

@@ -1,24 +1,32 @@
 # Installer le pilote
 
-_Source :_ [https://docs.aws.amazon.com/fr\_fr/AWSEC2/latest/UserGuide/nvme-ebs-volumes.html](https://docs.aws.amazon.com/fr_fr/AWSEC2/latest/UserGuide/nvme-ebs-volumes.html) __
+_Source :_ [https://docs.aws.amazon.com/fr\_fr/AWSEC2/latest/UserGuide/nvme-ebs-volumes.html](https://docs.aws.amazon.com/fr_fr/AWSEC2/latest/UserGuide/nvme-ebs-volumes.html) \_\_
 
 * Mettez à jour le cache de votre package :
 
-  `sudo apt-get update -y`
+```bash
+sudo apt-get update -y
+```
 
 * Mettez à niveau le package linux-aws pour recevoir la version la plus récente :
 
-  `sudo apt-get upgrade -y linux-aws`
+```bash
+sudo apt-get upgrade -y linux-aws
+```
 
 * Redémarrez votre instance pour charger la dernière version du noyau :
 
-  `sudo reboot`
+```bash
+sudo reboot
+```
 
-  Voir ses volume de stockage :
+Voir ses volume de stockage :
 
-  `lsblk`
+```bash
+lsblk
+```
 
-```text
+```bash
 NAME        MAJ:MIN RM   SIZE RO TYPE MOUNTPOINT
 loop0         7:0    0    89M  1 loop /snap/core/7713
 loop1         7:1    0    18M  1 loop /snap/amazon-ssm-agent/1335
@@ -29,10 +37,20 @@ nvme1n1     259:1    0     8G  0 disk
 └─nvme1n1p1 259:2    0     8G  0 part /
 ```
 
-* Installation de l'interface de commandes `nvme-cli` \(pour pouvoir utiliser les commandes `nvme` : `sudo apt-get update` `sudo apt-get install nvme-cli`
-* ID de volume et nom de périphérique : `sudo nvme id-ctrl -v /dev/nvme1n1`
+* Installation de l'interface de commandes `nvme-cli` \(pour pouvoir utiliser les commandes `nvme` : 
 
-```text
+```bash
+sudo apt-get update
+sudo apt-get install nvme-cli
+```
+
+* ID de volume et nom de périphérique : 
+
+```bash
+sudo nvme id-ctrl -v /dev/nvme1n1
+```
+
+```bash
 NVME Identify Controller:
 vid     : 0x1d0f
 ssvid   : 0x1d0f
@@ -44,7 +62,7 @@ mn      : Amazon Elastic Block Store
 ...
 ```
 
-_Source :_ [https://docs.aws.amazon.com/fr\_fr/AWSEC2/latest/UserGuide/ebs-using-volumes.html](https://docs.aws.amazon.com/fr_fr/AWSEC2/latest/UserGuide/ebs-using-volumes.html) __
+_Source :_ [https://docs.aws.amazon.com/fr\_fr/AWSEC2/latest/UserGuide/ebs-using-volumes.html](https://docs.aws.amazon.com/fr_fr/AWSEC2/latest/UserGuide/ebs-using-volumes.html) \_\_
 
 \_\_
 

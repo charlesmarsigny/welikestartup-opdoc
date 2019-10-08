@@ -4,7 +4,7 @@ Ubuntu 18.04
 
 `sudo apt update` `sudo apt upgrade` `sudo apt-get update` `sudo apt-get upgrade`
 
-_Source :_ [https://howto.wared.fr/installation-wordpress-ubuntu-nginx/](https://howto.wared.fr/installation-wordpress-ubuntu-nginx/) __
+_Source :_ [https://howto.wared.fr/installation-wordpress-ubuntu-nginx/](https://howto.wared.fr/installation-wordpress-ubuntu-nginx/) \_\_
 
 `sudo apt-get -y install nginx`
 

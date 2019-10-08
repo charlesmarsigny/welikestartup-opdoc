@@ -8,7 +8,7 @@ description: >-
 
 L'application contient de nombreuses APIs comme son API HTTP d'une grande simplicité, son API d’upload en une fonction, son API de base de données, son API de sécurité et bien d'autres.
 
-On peut donc charger l'application sans l’interface, sans le front-end, juste pour utiliser ses APIs. Il est aussi possible de bâtir l'application sans les thèmes, on peut créer un accès membre, sans back-end etc. 
+On peut donc charger l'application sans l’interface, sans le front-end, juste pour utiliser ses APIs. Il est aussi possible de bâtir l'application sans les thèmes, on peut créer un accès membre, sans back-end etc.
 
 > C’est ça la puissance même de l'application alimentée par WordPress.
 
@@ -20,8 +20,6 @@ L'application se charge tout seul, elle est grande ! Ce qui est vrai pour index.
 2. **wp-blog-header.php**
 3. **wp-config.php \(déprécié\)**
 4. **wp-load.php**
-
-
 
 ### index.php
 
@@ -58,7 +56,7 @@ On utilise déjà ce bootstrap lorsqu’une requête AJAX est faite, l'applicati
  */
 define( 'DOING_AJAX', true );
 if ( ! defined( 'WP_ADMIN' ) ) {
-	define( 'WP_ADMIN', true );
+    define( 'WP_ADMIN', true );
 }
 /** Load WordPress Bootstrap */
 require_once( dirname( dirname( __FILE__ ) ) . '/wp-load.php' );
@@ -99,10 +97,10 @@ Et si l'on met `/app/content/plugins/addons/myplugin/` et bien forcément … ç
 // Load WordPress
 $bootstrap = 'wp-load.php';
 while( !is_file( $bootstrap ) ) {
-	if( is_dir( '..' ) ) 
-		chdir( '..' );
-	else
-		die( 'EN: Could not find WeLikeStartup App : Impossible de trouver WeLikeStartup App' );
+    if( is_dir( '..' ) ) 
+        chdir( '..' );
+    else
+        die( 'EN: Could not find WeLikeStartup App : Impossible de trouver WeLikeStartup App' );
 }
 require_once( $bootstrap );
 ```

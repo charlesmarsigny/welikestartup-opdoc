@@ -30,5 +30,3 @@ Vous devriez non seulement dire ce que vous avez fait, mais surtout pourquoi vou
 * [Git CheatSheet par GitHub](https://services.github.com/on-demand/downloads/github-git-cheat-sheet.pdf)
 * [Interface graphique pour Git](https://www.gitkraken.com/)
 
-
-

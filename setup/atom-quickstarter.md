@@ -4,7 +4,7 @@ description: Installation d'atom et installation d'une préconfiguration.
 
 # Atom Quickstarter
 
-### Installation d'Atom
+## Installation d'Atom
 
 Télécharger atom :
 
@@ -13,7 +13,7 @@ Télécharger atom :
 
 Une fois téléchargé, lancez l'installation.
 
-### Installation de la configuration
+## Installation de la configuration
 
 Télécharger la [préconfiguration](https://slack-files.com/T277LFVDF-FB1RGNGSH-b936bdf3de) atom.
 
@@ -30,9 +30,9 @@ Adaptez le chemin `~/Downloads/` selon votre configuration pour correspondre au 
 
 Vous pouvez lancez Atom.
 
-Au lancement d'atom vous aurez un message vous demandant de désactiver Linter ou Diagnostic, sélectionnez Linter. 
+Au lancement d'atom vous aurez un message vous demandant de désactiver Linter ou Diagnostic, sélectionnez Linter.
 
-#### Dépendances de la préconfiguration
+### Dépendances de la préconfiguration
 
 Selon votre environnement, en lançant vous aurez des messages vous demandant d'installer des dépendances, acceptez les et redémarrez atom.
 
@@ -57,13 +57,13 @@ $ export PATH="$PATH:$HOME/.composer/vendor/bin"
 $ cd /tmp && curl -L https://cs.sensiolabs.org/download/php-cs-fixer-v2.phar -o php-cs-fixer
 ```
 
-### Aller plus loin
+## Aller plus loin
 
-#### Utiliser les raccourcis clavier
+### Utiliser les raccourcis clavier
 
 Voici quelques raccourcis utiles :
 
-| shift + ⌘ + p  | Afficher la palette de commande |
+| shift + ⌘ + p | Afficher la palette de commande |
 | :--- | :--- |
 | ⌘ + / | Commenter/Décommenter une ou plusieurs lignes |
 | ⌘ + p | Aller à un fichier |
@@ -71,9 +71,7 @@ Voici quelques raccourcis utiles :
 | ⌘ + F2 | Mettre un marque-page |
 | F2 | Aller à un marque-page |
 
-
-
-#### Changer la police
+### Changer la police
 
 Installer le plugin fonts
 
@@ -81,13 +79,9 @@ Installer le plugin fonts
 $ apm install fonts
 ```
 
-Puis dans les paramètres \(⌘ + ,\), allez dans packages, cherchez fonts, puis les paramètres du plugin sélectionnez une police 
+Puis dans les paramètres \(⌘ + ,\), allez dans packages, cherchez fonts, puis les paramètres du plugin sélectionnez une police
 
 {% hint style="info" %}
 Pour utiliser la même que dans la configuration du terminal, sélectionnez Source Code Pro.
 {% endhint %}
-
-
-
-
 
