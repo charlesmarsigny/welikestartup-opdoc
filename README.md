@@ -1,6 +1,6 @@
 ---
-description: Retrouvez toute la documentation développeurs de l'application.
+description: Retrouvez toute la documentation concernant AWS.
 ---
 
-# Hello world !
+# AWS
 
