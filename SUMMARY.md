@@ -117,6 +117,7 @@
     * [Monter le volume de 150 Go de stockage](aws/volume-nvme/monter-le-volume-de-150-go-de-stockage.md)
     * [Donner accès au serveur web au volume de stockage de 150 Go \(/data/wordpress\) :](aws/volume-nvme/donner-acces-au-serveur-web-au-volume-de-stockage-de-150-go-data-wordpress/README.md)
       * [Pour apache2](aws/volume-nvme/donner-acces-au-serveur-web-au-volume-de-stockage-de-150-go-data-wordpress/pour-apache2.md)
+      * [Nginx](aws/volume-nvme/donner-acces-au-serveur-web-au-volume-de-stockage-de-150-go-data-wordpress/nginx.md)
   * [EC2 - Connexions SSH](aws/ec2-connexions-ssh/README.md)
     * [Compte utilisateur SSH](aws/ec2-connexions-ssh/compte-utilisateur-ssh.md)
     * [Sécurité : Paire de clés](aws/ec2-connexions-ssh/securite-paire-de-cles.md)
