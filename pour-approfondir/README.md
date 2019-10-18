@@ -6,5 +6,5 @@ azerty qwerty
 info
 {% endhint %}
 
-{% page-ref page="ec2-connexions-ssh/compte-utilisateur-ssh.md" %}
+{% page-ref page="../ec2-connexions-ssh/compte-utilisateur-ssh.md" %}
 
