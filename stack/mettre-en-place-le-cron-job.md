@@ -110,5 +110,7 @@ Tata
 
 {% embed url="https://www.digitalocean.com/community/questions/set-up-cron-job-ubuntu-nginx-server%0Ahttps://www.100son.net/cron-wordpress-problemes-solutions/" %}
 
+{% embed url="https://www.100son.net/cron-wordpress-problemes-solutions/" %}
+
 
 

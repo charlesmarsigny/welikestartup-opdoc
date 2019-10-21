@@ -14,7 +14,7 @@ Sous Nginx le propriétaire est aussi  `www-data` , il est possible de le change
 
 * **Pour une instance utilisant un NVMe \(md5.xlarge\) :**
 
-`chown -R www-data:www-data /data/wordpress`
+`sudo chown -R www-data:www-data /data/wordpress`
 
 Répertoire wordpress 755  
 `find /data/wordpress -type d -exec chmod 755 {} +`  
