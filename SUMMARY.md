@@ -24,6 +24,7 @@
   * [Droits d'accès aux fichiers](stack/droits-dacces-aux-fichiers.md)
   * [Mettre en place le cron job](stack/mettre-en-place-le-cron-job.md)
   * [Désactiver le cron pour les instances ELB](stack/desactiver-le-cron-pour-les-instances-elb.md)
+  * [Changer Nginx](stack/changer-nginx.md)
   * [Installer les caches](stack/installer-les-caches/README.md)
     * [Cache navigateur](stack/installer-les-caches/cache-navigateur.md)
     * [Cache serveur](stack/installer-les-caches/cache-serveur.md)
