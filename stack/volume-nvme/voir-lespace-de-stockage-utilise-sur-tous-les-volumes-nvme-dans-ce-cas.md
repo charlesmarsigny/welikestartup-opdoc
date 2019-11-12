@@ -2,16 +2,16 @@
 
 `df -hT /dev/nvme?n*` 
 
-{% code-tabs %}
-{% code-tabs-item title="Résultat" %}
+{% tabs %}
+{% tab title="Résultat" %}
 ```bash
 Filesystem     Type      Size  Used Avail Use% Mounted on
 udev           devtmpfs  7.6G     0  7.6G   0% /dev
 udev           devtmpfs  7.6G     0  7.6G   0% /dev
 /dev/nvme1n1p1 ext4      7.7G  2.3G  5.5G  30% /
 ```
-{% endcode-tabs-item %}
-{% endcode-tabs %}
+{% endtab %}
+{% endtabs %}
 
 {% hint style="success" %}
 Nous pouvons en déduire que notre Ubuntu tourne sur la partition **nvme1n1p1** dont la racine est **`/`**
