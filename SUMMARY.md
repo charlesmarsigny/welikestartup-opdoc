@@ -26,7 +26,7 @@
   * [Désactiver le cron pour les instances ELB](stack/desactiver-le-cron-pour-les-instances-elb.md)
   * [Changer Nginx](stack/changer-nginx.md)
   * [Installer les caches](stack/installer-les-caches/README.md)
-    * [Cache navigateur](stack/installer-les-caches/cache-navigateur.md)
+    * [Cache navigateur ou d'origine](stack/installer-les-caches/cache-navigateur.md)
     * [Cache serveur](stack/installer-les-caches/cache-serveur.md)
     * [Cache front-end](stack/installer-les-caches/cache-opcache.md)
     * [Cache BDD](stack/installer-les-caches/cache-memcached.md)

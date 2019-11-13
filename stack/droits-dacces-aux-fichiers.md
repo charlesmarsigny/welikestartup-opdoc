@@ -17,11 +17,11 @@ Sous Nginx le propriétaire est aussi  `www-data` , il est possible de le change
 `sudo chown -R www-data:www-data /data/wordpress`
 
 Répertoire wordpress 755  
-`find /data/wordpress -type d -exec chmod 755 {} +`  
+`sudo find /data/wordpress -type d -exec chmod 755 {} +`  
 _L'argument -type d indique que l'on recherche les directories \(répertoires\)._
 
 Fichiers wordpress 644  
-`find /data/wordpress -type f -exec chmod 644 {} +`  
+`sudo find /data/wordpress -type f -exec chmod 644 {} +`  
 _L'argument -type f indique que l'on recherche les files \(fichiers\)._
 
 \_\_

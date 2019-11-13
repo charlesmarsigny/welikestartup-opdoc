@@ -2,7 +2,7 @@
 description: Cache Nginx
 ---
 
-# Cache navigateur
+# Cache navigateur ou d'origine
 
 ### Configurations :
 
@@ -45,6 +45,20 @@ sudo service nginx restart
 
 
 
+
+
+Filtrer les mises en cache
+
+
+
+Purge du cache
+
+Plugin Nginx Helper
+
+
+
+
+
 ### Tests : 
 
 Créer des fichiers html, jpg, css et js dans le répertoire par défaut \(/data/wordpress\) :
@@ -58,6 +72,16 @@ sudo truncate -s 3k /data/wordpress/cacheTest.js
 ```
 
 #### 
+
+```bash
+# Option -s = SIZE : permet de définir la taille du fichier
+sudo truncate -s 3k /var/www/html/cacheTest.html
+sudo truncate -s 3k /var/www/html/cacheTest.jpg
+sudo truncate -s 3k /var/www/html/cacheTest.css
+sudo truncate -s 3k /var/www/html/cacheTest.js
+```
+
+
 
 #### Vérification du header HTTP par défaut **avant la configuration du cache** :
 
