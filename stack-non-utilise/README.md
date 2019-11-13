@@ -148,8 +148,11 @@ Sources :
 Vérifier qu'on a les bons outils :  
 `sudo apt-get install curl gnupg apt-transport-https`
 
-Installation de la clé GPG pour avoir accès aux ressources du serveur de varnishcache :  
-`sudo curl -L https://packagecloud.io/varnishcache/varnish60lts/gpgkey | sudo apt-key add`
+Installation de la clé GPG pour avoir accès aux ressources du serveur de varnishcache :
+
+```text
+sudo curl -L https://packagecloud.io/varnishcache/varnish60lts/gpgkey | sudo apt-key add -
+```
 
 ~~Ajouter à la fin du fichier de la liste des source pour apt :  
 `sudo nano /etc/apt/sources.list`~~~

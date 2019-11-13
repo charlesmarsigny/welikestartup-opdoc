@@ -52,3 +52,9 @@ Les règles MySQL/Aurora doivent être faites pour les IPs publique et privée d
 
 
 
+**Source :**
+
+{% embed url="https://howto.wared.fr/installation-wordpress-ubuntu-nginx/" %}
+
+
+

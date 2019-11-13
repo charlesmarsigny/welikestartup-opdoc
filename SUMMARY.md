@@ -31,6 +31,7 @@
     * [Cache front-end](stack/installer-les-caches/cache-opcache.md)
     * [Cache BDD](stack/installer-les-caches/cache-memcached.md)
     * [Cache serveur avec Nginx](stack/installer-les-caches/cache-serveur-avec-nginx.md)
+    * [Cache serveur avec Varnish](stack/installer-les-caches/cache-serveur-avec-varnish.md)
 * [Pour approfondir](pour-approfondir/README.md)
   * [Gérer les utilisateurs et les groupes](pour-approfondir/gerer-les-utilisateurs-et-les-groupes.md)
   * [Gestion du lancement de services au démarrage de l'instance](pour-approfondir/gestion-du-lancement-de-services-au-demarrage-de-linstance.md)
