@@ -10,8 +10,7 @@ OpCache est fourni avec php. Il suffit de l'activer et de le configurer.
 sudo nano /etc/php/7.1/fpm/php.ini
 ```
 
-{% tabs %}
-{% tab title="Modifications dans le fichier php.ini" %}
+{% code title="Modifications dans le fichier php.ini" %}
 ```bash
 # Il faut décommenter les lignes suivantes et modifier leurs valeurs si besoin.
 opcache.enable=1 
@@ -22,8 +21,7 @@ opcache.memory_consumption=128
 opcache.save_comments=1 
 opcache.revalidate_freq=1
 ```
-{% endtab %}
-{% endtabs %}
+{% endcode %}
 
 Redémarrer le service PHP-FPM :
 

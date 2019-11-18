@@ -44,6 +44,8 @@ Installer Varnish :
 
 {% embed url="https://packagecloud.io/varnishcache/varnish60lts/install\#manual-deb" %}
 
+{% embed url="https://www.linode.com/docs/websites/varnish/use-varnish-and-nginx-to-serve-wordpress-over-ssl-and-http-on-debian-8/" %}
+
 
 
 

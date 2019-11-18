@@ -89,8 +89,7 @@ sudo truncate -s 3k /var/www/html/cacheTest.js
 curl -I http://localhost/cacheTest.html
 ```
 
-{% tabs %}
-{% tab title="Réponse" %}
+{% code title="Réponse" %}
 ```bash
 HTTP/1.1 200 OK
 Server: nginx/1.10.1 (Ubuntu)
@@ -102,8 +101,7 @@ Connection: keep-alive
 ETag: "5806e43e-400"
 Accept-Ranges: bytes
 ```
-{% endtab %}
-{% endtabs %}
+{% endcode %}
 
 Le header **ETag** correspond à un ID unique de la version du fichier demandé \(cacheTest.html\).
 
@@ -111,8 +109,7 @@ Le header **ETag** correspond à un ID unique de la version du fichier demandé 
 curl -I -H 'If-None-Match: "5806e43e-400"' http://localhost/cacheTest.html
 ```
 
-{% tabs %}
-{% tab title="Réponse" %}
+{% code title="Réponse" %}
 ```bash
 HTTP/1.1 304 Not Modified
 Server: nginx/1.10.1 (Ubuntu)
@@ -121,8 +118,7 @@ Last-Modified: Wed, 19 Oct 2016 03:10:54 GMT
 Connection: keep-alive
 ETag: "5806e43e-400"
 ```
-{% endtab %}
-{% endtabs %}
+{% endcode %}
 
 Réponse 304 : ce qui veut dire que le fichier n'a pas été modifier et que le serveur ne renverra pas le fichier mais indique au navigateur qu'il peut réutiliser le fichier déjà téléchargé. Ceci est bien pour faire du caching mais pas assez car même si le serveur ne renvoie pas le fichier, le navigateur lui envoie à chaque fois une requête demandant s'il peut réutiliser le fichier.
 
@@ -134,8 +130,7 @@ Réponse 304 : ce qui veut dire que le fichier n'a pas été modifier et que le 
 curl -I http://localhost/cacheTest.html
 ```
 
-{% tabs %}
-{% tab title="Réponse" %}
+{% code title="Réponse" %}
 ```bash
 HTTP/1.1 200 OK
 Server: nginx/1.10.1 (Ubuntu)
@@ -149,8 +144,7 @@ Expires: Thu, 01 Jan 1970 00:00:01 GMT
 Cache-Control: no-cache
 Accept-Ranges: bytes
 ```
-{% endtab %}
-{% endtabs %}
+{% endcode %}
 
 **Pas de cache sur les fichiers html.**
 
@@ -158,8 +152,7 @@ Accept-Ranges: bytes
 curl -I http://localhost/cacheTest.css
 ```
 
-{% tabs %}
-{% tab title="Réponse" %}
+{% code title="Réponse" %}
 ```bash
 HTTP/1.1 200 OK
 Server: nginx/1.10.1 (Ubuntu)
@@ -173,8 +166,7 @@ Expires: Thu, 31 Dec 2037 23:55:55 GMT
 Cache-Control: max-age=315360000
 Accept-Ranges: bytes
 ```
-{% endtab %}
-{% endtabs %}
+{% endcode %}
 
 **Cache actif** sur les fichier CSS. **Cache-Control** donne la durée du cache**. Expire** donne la date d'expiration.
 
