@@ -40,11 +40,59 @@ Installer Varnish :
 
 
 
+
+
 **Source :**
 
 {% embed url="https://packagecloud.io/varnishcache/varnish60lts/install\#manual-deb" %}
 
 {% embed url="https://www.linode.com/docs/websites/varnish/use-varnish-and-nginx-to-serve-wordpress-over-ssl-and-http-on-debian-8/" %}
+
+
+
+
+
+## Notabene : Varnish standard, c'est mieux
+
+En installant Varnish normalement sans aller chercher des packages spécifiques pour une version version spécifique \(varnish-6.0.5 lts\), il suffit de faire :
+
+```bash
+sudo apt-get update
+sudo apt-get install varnish
+
+# Pour connaitre la version de notre Varnish :
+varnishd -V
+
+sudo systemctl disable varnish --now
+```
+
+On obtient la version varnish-5.2.1 avec laquelle sont fournis les fichiers qui n'existent pas dans la version 6 et qu'on retrouve pourtant partout dans les docs et tutos sur le web.
+
+```bash
+# Ces fichiers existent bien dans la version standard de Varnish :
+sudo nano /etc/default/varnish
+sudo nano /lib/systemd/system/varnish.service
+sudo nano /etc/varnish/secret
+# Ce qui n'était pas le cas avec Varnish 6 lts
+```
+
+
+
+```bash
+sudo systemctl daemon-reload
+```
+
+
+
+```bash
+cp -r /var/www/html/wordpress/wp-content/plugins/vcaching/varnish-conf/v5/conf /etc/varnish/
+```
+
+
+
+
+
+
 
 
 
