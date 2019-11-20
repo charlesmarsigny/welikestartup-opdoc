@@ -19,6 +19,7 @@
   * [Installer PHP-FPM7.1](stack/installer-php-fpm7.1.md)
   * [Configurer l'utilisation de PHP-FPM](stack/configurer-lutilisation-de-php-fpm.md)
   * [Configurer l'upload de gros fichiers](stack/configurer-lupload-de-gros-fichiers.md)
+  * [Configuration Nginx](stack/configuration-nginx.md)
   * [Rediriger HTTP vers HTTPS \(ELB\)](stack/rediriger-http-vers-https-elb.md)
   * [Installer Wordpress sur un EC2](stack/installer-wordpress-sur-un-ec2.md)
   * [Droits d'accès aux fichiers](stack/droits-dacces-aux-fichiers.md)
