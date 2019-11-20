@@ -78,17 +78,115 @@ sudo nano /etc/varnish/secret
 
 
 
+
+
 ```bash
+sudo cp -r /var/www/html/wordpress/wp-content/plugins/vcaching/varnish-conf/v5/conf /etc/varnish/
+```
+
+
+
+Récupérer les fichiers de config de Varnish depuis le répertoire du plugin "vcaching" :
+
+```bash
+# Changer le nom de default.vcl d'origine pour pas l'écraser
+sudo mv /etc/varnish/default.vcl /etc/varnish/default-original.vcl
+
+# Copier coller les fichiers du plugin
+sudo cp -r /data/wordpress/wp-content/plugins/vcaching/varnish-conf/v5/conf /etc/varnish/
+sudo cp -r /data/wordpress/wp-content/plugins/vcaching/varnish-conf/v5/lib /etc/varnish/
+sudo cp /data/wordpress/wp-content/plugins/vcaching/varnish-conf/v5/default.vcl /etc/varnish/
+
+
+```
+
+
+
+### Adapter les fichiers de config de Varnish à notre stack :
+
+```bash
+sudo nano /etc/varnish/lib/purge.vcl
+# Changer la clé de purge
+set req.http.X-VC-My-Purge-Key = "chnhebq8vhelat20u8au0dem1svgfwy89cd4561zcytclo2mfa7xhkb1tpyj1qvk";
+
+sudo nano /etc/varnish/conf/acl.vcl
+acl purge {
+	"localhost";
+	"127.0.0.1";
+	# IP privé de l'instance
+	"172.62.63.169";
+	# Mettre le CIDR des sous réseaux privés
+	
+sudo nano /etc/varnish/conf/backend.vcl
+backend backend1 {
+	.host = "127.0.0.1";
+	.port = "8080";
+}
+```
+
+
+
+
+
+### Remplacer le port 6081 par le 80 :
+
+Modifier le fichier `sudo nano /etc/default/varnish`:
+
+```bash
+DAEMON_OPTS="-a :80 \
+             -T localhost:6082 \
+             -f /etc/varnish/default.vcl \
+             -S /etc/varnish/secret \
+             -s malloc,256m"
+# 256m : taille de la mémoire réservé pour le cache
+```
+
+```bash
+sudo nano /lib/systemd/system/varnish.service
+
+# Modifier la ligne ExecStart :
+ExecStart=/usr/sbin/varnishd -j unix,user=vcache -F -a :80 -T localhost:6082 -f /etc/varnish/default.vcl -S /etc/varnish/secret -s malloc,256m
+```
+
+```bash
+# Recharger systemd
 sudo systemctl daemon-reload
 ```
 
-
-
 ```bash
-cp -r /var/www/html/wordpress/wp-content/plugins/vcaching/varnish-conf/v5/conf /etc/varnish/
+sudo nano /etc/nginx/fastcgi_params
+
+# Ajouter à la fin du fichier :
+fastcgi_param  SCRIPT_FILENAME    $request_filename;
+fastcgi_param  PATH_INFO          $fastcgi_path_info;
+
 ```
 
 
+
+Adapter Nginx :
+
+```bash
+sudo nano /etc/nginx/sites-available/varnish.conf
+listen 8080;
+
+sudo service nginx restart
+sudo service varnish start
+```
+
+
+
+
+
+
+
+
+
+Sources :
+
+A ne pas suivre entièrement :
+
+{% embed url="https://www.linode.com/docs/websites/varnish/use-varnish-and-nginx-to-serve-wordpress-over-ssl-and-http-on-debian-8/" %}
 
 
 
