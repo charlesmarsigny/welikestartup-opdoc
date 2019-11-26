@@ -164,7 +164,7 @@ fastcgi_param  PATH_INFO          $fastcgi_path_info;
 
 
 
-Adapter Nginx :
+### Adapter Nginx :
 
 ```bash
 sudo nano /etc/nginx/sites-available/varnish.conf
@@ -179,6 +179,29 @@ sudo service varnish start
 
 
 
+
+### Supprimer Varnish
+
+```bash
+# Désinstalle Varnish et ses dépendances
+sudo apt-get remove --auto-remove varnish
+# Purger les données
+sudo apt-get purge --auto-remove varnish
+```
+
+
+
+A faire
+
+* utiliser le stockage de 150go pour le cache
+* gérer l'autoscaling
+* cache des assets et navigateur
+* réglage des ttl et grace
+* ttl plutôt court pour la synchronization avec une autre instance en autoscaling
+* "Les extras" : "varnishagent2" et Analyse sur varnish avec "varnish adgent" et le tableau de bord
+* Module de varnish : permet d'étendre les fonctionnalités de varnish
+* 
+Assets à mettre dans le s3 qui push sur cloudfront \(à faire en dehors de varnish\)
 
 
 
