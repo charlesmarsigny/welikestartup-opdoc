@@ -48,5 +48,10 @@ Dans les paramètre du plugin dans le backoffice :
 
 
 
+## Licence
+
+* Fichier CSS et Js sur CloudFront en Pull à partir de la version Gold
+* Nombre limité d'upload de fichiers
+
 
 
