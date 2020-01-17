@@ -1,6 +1,8 @@
 # Table of contents
 
 * [AWS](README.md)
+* [Architecture Medias](architecture-medias/README.md)
+  * [CloudFront](architecture-medias/cloudfront.md)
 * [EC2 - Connexions SSH](ec2-connexions-ssh/README.md)
   * [Compte utilisateur SSH](ec2-connexions-ssh/compte-utilisateur-ssh.md)
   * [Sécurité : Paire de clés](ec2-connexions-ssh/securite-paire-de-cles.md)
